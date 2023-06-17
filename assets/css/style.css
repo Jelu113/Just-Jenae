@@ -1,0 +1,55 @@
+
+header { display: flex;
+    flex-direction: row;
+    align-items: right;
+    padding:30px 20px 20px 300px;
+    font-size: 75px;
+    color: rgb(247, 242, 228);
+    background-color: rgb(43, 124, 117);
+}
+
+/*this h1 centers the title in the heading*/
+
+h1{ display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+/*this header nav pushes the ul li to the left of the header giving it proper space*/
+header nav{
+    padding-left: 50px;
+
+}
+
+
+/* Sets up the li to be centered in the header and lined up with eachother */
+
+.box {   
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width: fit-content;
+    Height: fit-content;
+    font-size: 25px;
+    padding:4px 0px 4px 0px;
+     }
+
+/* changes the look when you hover over the li items*/
+
+.box:hover {
+    background-color:rgb(128, 171, 155);
+    color:black;
+    padding: 4px;   
+}    
+
+.box:active {
+    background-color:rgba(187, 146, 225, 0.776);
+}
+.box:visited {
+    color:rgba(187, 146, 225, 0.776);
+}
+
+body {
+   background-color: rgb(247, 242, 228)
+}
