@@ -1,66 +1,101 @@
 
-header { display: flex;
-    flex-direction: row;
-    align-items: right;
-    flex-wrap:wrap;
-    height:185px;
-    width:100%;
-    padding:30px 20px 20px 30px;
-    font-size: 75px;
+header { 
+    display:block;
+    height: 200px;
+    width: 100%;
+    font-size: 100px;
     color: rgb(247, 242, 228);
-    background-color: rgb(43, 124, 117);
-}
-
-.img { display:flex;
-    flex-wrap: wrap;
-    height:250px;
-    width:250px;
-    padding-top: 7px;
-}
-
-/*this h1 centers the title in the heading*/
-
-h1{ display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:0px 0px 125px 30px
-}
-
-
-/*this header nav pushes the ul li to the left of the header giving it proper space*/
-header nav{
-    padding-left: 50px;
+    background-color:rgb(43, 124, 117);
+    Padding:50px 0px 0px 475px;
 
 }
 
-
-/* Sets up the li to be centered in the header and lined up with eachother */
-
-.box {   
+nav {
     display:flex;
-    justify-content:center;
-    align-items:center;
-    width: fit-content;
-    Height: fit-content;
-    font-size: 30px;
-    padding:8px 0px 8px 0px;
-     }
+    justify-content: end;
+    font-size:35px;
+    
 
-/* changes the look when you hover over the li items*/
+}
 
-.box:hover {
+nav ul li { 
+    display:inline-block;
+    color: rgb(247, 242, 228);
+    padding: 0px 45px 0px 0px;
+}
+
+a{
+    display:inline;
+    color: rgb(247, 242, 228);
+    text-decoration:none;
+}
+
+a:visited {
+    color: rgb(156, 154, 154)
+}
+
+a:hover {
+    border:solid 1px black;
+    border-radius: 10px;
+    box-shadow:2px 2px 3px;
     background-color:rgb(128, 171, 155);
     color:black;
-    padding: 4px;   
-}    
+    font-weight: bold;
+    padding: 4px;
+    
+}
 
-.box:active {
+a:active {
     background-color:rgba(187, 146, 225, 0.776);
 }
-.box:visited {
-    color:rgba(187, 146, 225, 0.776);
+ 
+img{
+    float:left;
+    height:250px;
+    width:250px;
+    margin: 0px 0px 0px -425px;
+    border-radius:40px;
 }
 
-body {
-   background-color: rgb(247, 242, 228)
+
+h2 {
+    float:left;
+    font-size: 50px;
+    color: rgb(128, 171, 155);
+    padding: 300px 0px 0px 25px;
+    
+}
+
+.projects {
+    float:left;
+    font-size: 50px;
+    color: rgb(128, 171, 155);
+    padding: 500px 0px 0px 25px;
+}
+
+
+.line1 {
+    display:inline-block;
+    margin: 125px 15px 0px 70px;
+    height: 400px;
+    width:4px;
+    background-color: rgb(128, 171, 155);
+}
+
+
+.line2 {
+    display:inline-block;
+    margin: 125px 100px 0px 105px;
+    height: 750px;
+    width:4px;
+    background-color: rgb(128, 171, 155);
+
+}
+
+.line3 {
+    display:inline-block;
+    margin: 125px 15px 0px 30px;
+    height: 400px;
+    width:4px;
+    background-color: rgb(128, 171, 155);
 }
