@@ -2,10 +2,20 @@
 header { display: flex;
     flex-direction: row;
     align-items: right;
-    padding:30px 20px 20px 300px;
+    flex-wrap:wrap;
+    height:185px;
+    width:100%;
+    padding:30px 20px 20px 30px;
     font-size: 75px;
     color: rgb(247, 242, 228);
     background-color: rgb(43, 124, 117);
+}
+
+.img { display:flex;
+    flex-wrap: wrap;
+    height:250px;
+    width:250px;
+    padding-top: 7px;
 }
 
 /*this h1 centers the title in the heading*/
@@ -13,6 +23,7 @@ header { display: flex;
 h1{ display:flex;
     justify-content:center;
     align-items:center;
+    padding:0px 0px 125px 30px
 }
 
 
@@ -31,8 +42,8 @@ header nav{
     align-items:center;
     width: fit-content;
     Height: fit-content;
-    font-size: 25px;
-    padding:4px 0px 4px 0px;
+    font-size: 30px;
+    padding:8px 0px 8px 0px;
      }
 
 /* changes the look when you hover over the li items*/
