@@ -1,3 +1,11 @@
+*{
+    box-sizing:border-box;
+}
+
+body{ 
+    background-color: rgb(247, 242, 228)
+    
+}
 
 header { 
     display:block;
@@ -24,17 +32,18 @@ nav ul li {
     padding: 0px 45px 0px 0px;
 }
 
-a{
+.a{
     display:inline;
     color: rgb(247, 242, 228);
-    text-decoration:none;
+    text-decoration: none;
+  
 }
 
-a:visited {
+.a:visited {
     color: rgb(156, 154, 154)
 }
 
-a:hover {
+.a:hover {
     border:solid 1px black;
     border-radius: 10px;
     box-shadow:2px 2px 3px;
@@ -45,11 +54,11 @@ a:hover {
     
 }
 
-a:active {
+.a:active {
     background-color:rgba(187, 146, 225, 0.776);
 }
  
-img{
+img {
     float:left;
     height:250px;
     width:250px;
@@ -57,9 +66,14 @@ img{
     border-radius:40px;
 }
 
+section { 
+    display: flex;
+    flex-direction: row;
+
+}
 
 h2 {
-    float:left;
+    
     font-size: 50px;
     color: rgb(128, 171, 155);
     padding: 300px 0px 0px 25px;
@@ -67,15 +81,13 @@ h2 {
 }
 
 .projects {
-    float:left;
     font-size: 50px;
     color: rgb(128, 171, 155);
-    padding: 500px 0px 0px 25px;
+    padding: 300px 0px 0px 25px;
 }
 
 
 .line1 {
-    display:inline-block;
     margin: 125px 15px 0px 70px;
     height: 400px;
     width:4px;
@@ -84,18 +96,139 @@ h2 {
 
 
 .line2 {
-    display:inline-block;
-    margin: 125px 100px 0px 105px;
-    height: 750px;
+    margin: 115px 15px 0px 17px;
+    height: 600px;
     width:4px;
     background-color: rgb(128, 171, 155);
 
 }
 
 .line3 {
-    display:inline-block;
     margin: 125px 15px 0px 30px;
     height: 400px;
     width:4px;
     background-color: rgb(128, 171, 155);
 }
+.img2 { 
+    align-items: center;
+    margin:200px 50px 30px 30px;
+    height: 400px;
+    width: 600px;
+}
+
+.img2:hover {
+    height:500px;
+    width: 800px
+}
+p { 
+    align-items: center;
+    font-size: 30px;
+    color:rgb(128, 171, 155);
+    height: 400px;
+    width: 1200px;
+    margin: 300px 0px 0px 0px;
+    padding: 2px;
+
+}
+
+#p {
+    align-items: center;
+    font-size: 30px;
+    color:rgb(128, 171, 155);
+    height: 400px;
+    width: 600px;
+    margin: 300px 0px 0px 0px;
+    padding: 2px;
+}
+span{
+    color: rgba(187, 146, 225, 0.776);
+    font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 992px) {
+header {
+    display:block;
+    height: 200px;
+    width: 100%;
+    font-size: 75px;
+    color: rgb(247, 242, 228);
+    background-color:rgb(43, 124, 117);
+    Padding:50px 0px 0px 375px;
+   }
+
+img {    
+    float:left;
+    height:200px;
+    width:200px;
+    margin: 0px 0px 0px -315px;
+    border-radius:40px;
+}
+    nav {
+        display:flex;
+        justify-content: end;
+        font-size:30px;
+        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        display:block;
+        height: 150px;
+        width: 100%;
+        font-size: 50px;
+        color: rgb(247, 242, 228);
+        background-color:rgb(43, 124, 117);
+        Padding:50px 0px 0px 300px;
+    }
+     img {    
+        float:left;
+        height:200px;
+        width:200px;
+        margin: 0px 0px 0px -250px;
+        border-radius:40px;
+    }
+
+    nav {
+        display:flex;
+        justify-content:end;
+        font-size:25px;
+        
+    }
+
+nav ul li { 
+    display:inline-block;
+    color: rgb(247, 242, 228);
+    padding: 0px 15px 0px 0px;
+}
+}
+
+@media screen and (max-width: 576px){
+    nav {
+        display:flex;
+        justify-content: end;
+        font-size:20px;
+        
+    }
+ 
+    header {
+        display:block;
+        height: 150px;
+        width: 100%;
+        font-size: 35px;
+        color: rgb(247, 242, 228);
+        background-color:rgb(43, 124, 117);
+        Padding:50px 0px 0px 300px;
+    }
+
+    img {    
+        float:left;
+        height:200px;
+        width:200px;
+        margin: 0px 0px 0px -275px;
+        border-radius:40px;
+    }
+}   
+
