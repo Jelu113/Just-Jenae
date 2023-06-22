@@ -11,3 +11,9 @@ added rounded corners to my profile pic and created a spot to have
 contact information added should I choose to use this Portfolio.  I 
 kept the layout and color scheme simple, because that is how I 
 prefer things to look. 
+
+https://jelu113.github.io/Just-Jenae/
+
+![Alt text][def]
+
+[def]: image.png
