@@ -3,48 +3,65 @@
 }
 
 body{ 
-    background-color: rgb(247, 242, 228)
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(247, 242, 228);
     
+        
 }
 
+
 header { 
-    display:block;
     height: 200px;
     width: 100%;
     background-color:rgb(43, 124, 117);
-}
+    border: solid 2px black;
+    }
 
-.img1 {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    border-radius:40px;
-}
-
-h1 { 
-    position: absolute;
-    left: 475px; 
-    top:50px;
-    font-size: 100px;
-    color: rgb(247, 242, 228);
-}
-nav {
-    position: absolute;
-    top: 150px;
-    right: 50px;
-    font-size: 35px;   
-
-}
-
-nav ul li { 
-    display:inline-block;
-    padding: 0px 45px 0px 0px;
+.container1 {
+    display: flex;
+    justify-content: center;
+   
+    
     
 }
 
-.a{
+.img1 { 
+    border-radius:40px;
+    position:relative;
+    top: 50px;
+    left: -225px;
+    border:solid 2px grey;
+}
+
+h1 { 
+    display: flex;
+    align-items: center;
+    height: 200px;
+    font-size: 100px;
+    color: rgb(247, 242, 228);
+    
+}
+
+
+.container2 {
+    display: flex;
+    justify-content: space-around;
+    position:relative;
+    top: 150px;
+    right:-200px;
+    width: 500px;
+    height: 50px;
+    
+}
+
+.a{ 
+    flex-direction: row;
+    font-size: 35px;
     color: rgb(247, 242, 228);
     text-decoration: none;
+    
+    
 }
 
 .a:visited {
@@ -65,98 +82,93 @@ nav ul li {
 .a:active {
     background-color:rgba(187, 146, 225, 0.776);
 }
- 
+
 
 
 section { 
-    display: flex;
-    flex-direction: row;
+    display:flex;
+    width: 100%;
+    height: 700px;
+    border: solid 2px red;
 }
 
-.about-me {
-    position: absolute;
-    left: 50px;
-    top: 500px;
+.container4, .container6 {
+    display:flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin: 54px 0px 0px 0px;
+    width:100%;
+    height: 500px;
+    
+
+}
+.container5{
+    display:flex;
+    align-content: flex-end;
+    justify-content: flex-end;
+    width:100%;
+    height: 500px;
+   
+   
+
+}
+.about, .contact { 
+    position: relative;
+    bottom: 200px;
     font-size: 50px;
     color: rgb(128, 171, 155);
+    width: 150px;
+    height:50px;
+    
     
 }
-
-.projects {
+.projects { 
     position: absolute;
-    left: 25px;
-    top: 1150px;
+    left: 100px;
+    top: 1200px;
+    justify-content:flex-start;
     font-size: 50px;
     color: rgb(128, 171, 155);
+    width: 150px;
+    height:50px;
     
 }
-
-.contact { 
-    position: absolute;
-    left: 25px;
-    top: 1825px;
-    font-size: 50px;
-    color: rgb(128, 171, 155);
-
-}
-.line1 {
-    position: absolute;
-    left: 250px;
-    top: 350px;
+.line1, .line3 { 
     height: 400px;
     width:4px;
     background-color: rgb(128, 171, 155);
 }
-
-
-.line2 {
+.line2 { 
     position: absolute;
-    left: 250px;
-    top: 900px;
+    left: 425px;
     height: 600px;
     width:4px;
     background-color: rgb(128, 171, 155);
-
 }
 
-.line3 {
-    position: absolute;
-    left: 250px;
-    top: 1650px; 
-    height: 400px;
-    width:4px;
-    background-color: rgb(128, 171, 155);
+.images {
+    display:flex;
+    flex-wrap: wrap;
+    width: 900px;
+    height:700px;
+    justify-content: center;
+    margin-right: 250px;
+    
 }
-.img2 { 
-    position: absolute;
-    top: 950px;
-    left: 300px;
-    height: 525px;
-    width: 700px;
+.soon1, .soon2 {
+    margin: 0px 15px 0px 15px;
 }
 
-.p-about { 
-    position: absolute;
-    top: 475px;
-    left: 300px;
+.p-about, .p-contact { 
+    position: relative;
+    bottom:75px;
+    right:50px;
     font-size: 30px;
     color:rgb(128, 171, 155);
-    height: 400px;
+    height: 300px;
     width: 1200px;
-    padding: 2px;
-
-}
-
-.p-contact {
-    position: absolute;
-    top: 1800px;
-    left: 300px;
-    font-size: 30px;
-    color:rgb(128, 171, 155);
-    height: 400px;
-    width: 1200px;
-    padding: 2px;
-
+    padding: 70px;
+    
 }
 
 span{
@@ -164,327 +176,467 @@ span{
     font-weight: bold;
 }
 
-.soon1 {
-    position: absolute;
-    top: 950px;
-    left:1025px;
-    
-    
-}
 
-.soon2 {
-    position: absolute;
-    top: 1220px;
-    left:1025px;
 
-}
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) { 
     header { 
-        display:block;
         height: 150px;
         width: 100%;
         background-color:rgb(43, 124, 117);
-    }
-    h1 { 
-        position: absolute;
-        left: 300px; 
-        top: 50px;
-        font-size: 60px;
-        color: rgb(247, 242, 228);
-    }
-    .img1 {
-        position: absolute;
-        top: 45px;
-        left: 45px;
-        border-radius:40px;
+        border: solid 2px black;
+        }
+    
+    .img1 { 
         height: 200px;
         width: 200px;
-    }
-
-    nav {
-       position: absolute;
-       top: 115px;
-       right: 300px;
-       font-size: 25px;   
-    }
-    nav ul li { 
-        display:inline-block;
-        padding: 0px 15px 0px 0px;
-    }    
-     
-    .about-me {
-        position: absolute;
-        left: 25px;
-        top: 425px;
-        font-size: 40px;
-        color: rgb(128, 171, 155);
-        
-    }
-    
-    .projects {
-        position: absolute;
-        left: 25px;
-        top: 850px;
-        font-size: 40px;
-        color: rgb(128, 171, 155);
-        
-    }
-    
-    .contact { 
-        position: absolute;
-        left: 25px;
-        top: 1400px;
-        font-size: 40px;
-        color: rgb(128, 171, 155);
-    } 
-    
-    .line1 {
-        position: absolute;
-        left: 200px;
-        top: 300px;
-        height: 300px;
-        width:4px;
-        background-color: rgb(128, 171, 155);
-    }
-    
-    
-    .line2 {
-        position: absolute;
-        left: 200px;
-        top: 650px;
-        height: 500px;
-        width:4px;
-        background-color: rgb(128, 171, 155);
-    
-    }
-    
-    .line3 {
-        position: absolute;
-        left: 200px;
-        top: 1200px; 
-        height: 400px;
-        width:4px;
-        background-color: rgb(128, 171, 155);
-    }
-
-    .img2 { 
-        position: absolute;
-        top: 650px;
-        left: 225px;
-        height: 300px;
-        width: 500px;
-    }
-  
-    .p-about { 
-        position: absolute;
-        top: 375px;
-        left: 225px;
-        font-size: 20px;
-        color:rgb(128, 171, 155);
-        height: 400px;
-        width: 500px;
-        padding: 2px;
-    
-    }
-    
-    .p-contact {
-        position: absolute;
-        top: 1350px;
-        left: 250px;
-        font-size: 20px;
-        color:rgb(128, 171, 155);
-        height: 400px;
-        width: 1200px;
-        padding: 2px;
-    
-    }
- 
-    .soon1 {
-        position: absolute;
-        top: 975px;
-        left: 225px;
-        height: 150px;
-        width: 250px;
-    }
-    
-    .soon2 {
-        position: absolute;
-        top: 975px;
-        left: 490px;
-        height: 150px;
-        width: 250px;
-    }
-
-}  
-@media screen and (max-width: 768px) {
-    header { 
-        display:block;
-        height: 150px;
-        width: 1000px;
-        background-color:rgb(43, 124, 117);
-    }
-    h1 { 
-        position: absolute;
-        left: 300px; 
-        top: 50px;
-        font-size: 60px;
-        color: rgb(247, 242, 228);
-    }
-    .img1 {
-        position: absolute;
-        top: 45px;
-        left: 45px;
         border-radius:40px;
-        height: 200px;
-        width: 200px;
+        position:relative;
+        top: 35px;
+        left: -15px;
+        border:solid 2px grey;
     }
 
-    nav {
-       position: absolute;
-       top: 115px;
-       right: 25px;
-       font-size: 25px;   
+    h1 { 
+        display: flex;
+        align-items: center;
+        height: 150px;
+        font-size: 75px;
+        color: rgb(247, 242, 228);
+        
     }
-    nav ul li { 
-        display:inline-block;
-        padding: 0px 15px 0px 0px;
-    }    
-     
-    .about-me {
-        position: absolute;
-        left: 25px;
-        top: 425px;
-        font-size: 40px;
-        color: rgb(128, 171, 155);
+    .container2 {
+        display: flex; 
+        position:relative;
+        top: 120px;
+        right: 25px;
+        padding: 0px 10px 0px 0px;
+        width: 300px;
+        height: 50px;
         
     }
     
-    .projects {
-        position: absolute;
-        left: 25px;
-        top: 850px;
-        font-size: 40px;
-        color: rgb(128, 171, 155);
+    .a { 
+        flex-direction: row;
+        font-size: 20px;
+        color: rgb(247, 242, 228);
+        text-decoration: none;
         
     }
     
-    .contact { 
-        position: absolute;
-        left: 25px;
-        top: 1400px;
-        font-size: 40px;
-        color: rgb(128, 171, 155);
-    } 
+    li {
+        flex-direction: row;
+    }
+        
+    body { 
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(247, 242, 228);  
+    }
     
-    .line1 {
-        position: absolute;
-        left: 200px;
-        top: 300px;
+    section { 
+        display:flex;
+        width: 100%;
+        height: 600px;    
+    }
+    
+    .container4, .container6 {
+        display:flex;
+        align-items: flex-end;
+        margin: 150px 0px 0px 0px;
+        width: 800px;
         height: 300px;
-        width:4px;
-        background-color: rgb(128, 171, 155);
     }
-    
-    
-    .line2 {
-        position: absolute;
-        left: 200px;
-        top: 650px;
+    .container5 {
+        display:flex;
+        align-content: flex-end;
+        justify-content: flex-end;
+        width: 100%;
         height: 500px;
-        width:4px;
-        background-color: rgb(128, 171, 155);
-    
+        
+    }    
+        
+    .projects { 
+        position: absolute;
+        left: 25px;
+        top: 1000px;
+        justify-content:flex-start;
+        font-size: 30px;
+        color: rgb(128, 171, 155);
+        width: 150px;
+        height:50px;
+        
+    }
+    .about, .contact { 
+        position: relative;
+        bottom: 175px;
+        left: -50px;
+        font-size: 30px;
+        color: rgb(128, 171, 155);
+        width: 0px;
+        height:50px;
+        
     }
     
-    .line3 {
-        position: absolute;
-        left: 200px;
-        top: 1200px; 
-        height: 400px;
-        width:4px;
+    .line1, .line3 {
+        
+        height: 350px;
+        width: 4px;
         background-color: rgb(128, 171, 155);
-    }
-
-    .img2 { 
-        position: absolute;
-        top: 650px;
-        left: 225px;
-        height: 300px;
-        width: 500px;
+        margin-left: -50px;
     }
   
-    .p-about { 
-        position: absolute;
-        top: 375px;
-        left: 225px;
-        font-size: 20px;
-        color:rgb(128, 171, 155);
+        
+    .p-about, .p-contact { 
+        position: relative;
+        bottom: 75px;
+        font-size: 15px;
+        color: rgb(128, 171, 155);
+        height: 200px;
+        width: 425px;
+        margin: 0px 0px 0px -45px;
+        padding: 50px 0px 55px 0px;
+    } 
+    .images {
+        display:flex;
+        flex-wrap: wrap;
+        width: 500px;
+        height:600px;
+        margin: 5px 85px 0px 0px;
+        border: solid 2px black;
+    }
+
+    .img3 {
         height: 400px;
         width: 600px;
-        padding: 2px;
-    
-    }
-    
-    .p-contact {
-        position: absolute;
-        top: 1350px;
-        left: 250px;
-        font-size: 20px;
-        color:rgb(128, 171, 155);
-        height: 400px;
-        width: 1200px;
-        padding: 2px;
-    
-    }
- 
-    .soon1 {
-        position: absolute;
-        top: 975px;
-        left: 225px;
-        height: 150px;
-        width: 250px;
-        
-        
-    }
-    
-    .soon2 {
-        position: absolute;
-        top: 975px;
-        left: 490px;
-        height: 150px;
-        width: 250px;
     }
 
-}
+    .soon1, .soon2 {
+         height: 100px;
+         width: 150px;
+    }
+    
+    span{
+        color: rgba(187, 146, 225, 0.776);
+        font-weight: bold;
+    }
+    .line2 { 
+        position: absolute;
+        left: 200px;
+        height: 600px;
+        width:4px;
+        background-color: rgb(128, 171, 155);
+    }
+    
 
-@media screen and (max-width: 600px){
-    header { 
-        height: 150px;
-        width: 1000px;
+  
+} 
+@media screen and (max-width: 768px) {
+    header { display:flex;
+        height: 125px;
+        width: 100%;
         background-color:rgb(43, 124, 117);
-    }
+        border: solid 2px black;
+        }
     
+    .img1 { 
+        height: 175px;
+        width: 175px;
+        border-radius:40px;
+        position:relative;
+        top: 10px;
+        left: 10px;
+        border:solid 2px grey;
+    }
+
     h1 { 
-        position: absolute;
-        left: 250px; 
-        top: 50px;
+        display: flex;
+        align-items: center;
+        position:relative;
+        right: -45px;
+        height: 125px;
+        width: 350px;
         font-size: 50px;
         color: rgb(247, 242, 228);
+       
     }
-     .img1 {    
+    .container2 {
+        display: flex; 
+        position:relative;
+        top: 90px;
+        right: 65px;
+        padding: 0px 5px 0px 0px;
+        width: 275px;
+        height: 50px;
+        
+    }
+    
+    .a { 
+        flex-direction: row;
+        font-size: 20px;
+        color: rgb(247, 242, 228);
+        text-decoration: none;
+        
+    }
+    
+    li {
+        flex-direction: row;
+    }
+        
+    body { 
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(247, 242, 228);  
+    }
+    
+    section { 
+        display:flex;
+        width: 100%;
+        height: 600px;    
+    }
+    
+    .container4, .container6 {
+        display:flex;
+        align-items: flex-end;
+        margin: 150px 0px 0px 0px;
+        width: 800px;
+        height: 300px;
+    }
+    .container5 {
+        display:flex;
+        align-content: flex-end;
+        justify-content: flex-end;
+        width: 100%;
+        height: 500px;
+        
+    }    
+        
+    .projects { 
         position: absolute;
-        top: 20px;
-        left: 20px;
-        border-radius:40px;
+        left: 25px;
+        top: 1000px;
+        justify-content:flex-start;
+        font-size: 30px;
+        color: rgb(128, 171, 155);
+        width: 150px;
+        height:50px;
+       
+    }
+    .about, .contact { 
+        position: relative;
+        bottom: 175px;
+        left: -50px;
+        font-size: 30px;
+        color: rgb(128, 171, 155);
+        width: 0px;
+        height:50px;
+        
+    }
+    
+    .line1, .line3 {
+        
+        height: 350px;
+        width: 4px;
+        background-color: rgb(128, 171, 155);
+        margin-left: -50px;
     }
   
-    nav {
-      position: absolute;
-      top: 100px;
-      left: 250px;
-      font-size: 25px;       
+        
+    .p-about, .p-contact { 
+        position: relative;
+        bottom: 75px;
+        font-size: 15px;
+        color: rgb(128, 171, 155);
+        height: 200px;
+        width: 425px;
+        margin: 0px 0px 0px -45px;
+        padding: 50px 0px 55px 0px;
     } 
-  
-}   
+    .images {
+        display:flex;
+        flex-wrap: wrap;
+        width: 500px;
+        height:600px;
+        margin: 5px 5px 0px 0px;
+        
+    }
 
+    .img3 {
+        height: 300px;
+        width: 400px;
+    }
+
+    .soon1, .soon2 {
+         height: 150px;
+         width: 200px;
+    }
+    
+    span{
+        color: rgba(187, 146, 225, 0.776);
+        font-weight: bold;
+    }
+    .line2 { 
+        position: absolute;
+        left: 170px;
+        height: 600px;
+        width:4px;
+        background-color: rgb(128, 171, 155);
+    }
+}
+
+@media screen and (max-width: 567px){
+   
+
+   header { 
+    display:flex;
+    justify-content: center;
+    height: 125px;
+    width: 850px;
+    background-color:rgb(43, 124, 117);
+    border: solid 2px black;
+    }
+
+   .img1 { 
+    height: 150px;
+    width: 150px;
+    border-radius:40px;
+    position:relative;
+    top: 10px;
+    left: -15px;
+    border:solid 2px grey;
+  }
+
+    h1 { 
+    display: flex;
+    align-items: center;
+    position:relative;
+    right: -25px;
+    height: 125px;
+    width: 350px;
+    font-size: 50px;
+    color: rgb(247, 242, 228);
+    
+  }
+   .container2 {
+    display: flex; 
+    position:relative;
+    top: 90px;
+    right: 125px;
+    padding: 0px 5px 0px 0px;
+    width: 275px;
+    height: 50px;
+    
+  }
+
+    .a { 
+    flex-direction: row;
+    font-size: 20px;
+    color: rgb(247, 242, 228);
+    text-decoration: none;
+    
+  }
+
+    li {
+    flex-direction: row;
+ }
+    
+    body { 
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(247, 242, 228);  
+  }
+
+   section { 
+    display:flex;
+    width: 750px;
+    height: 600px;    
+    }
+
+  .container4, .container6 {
+    display:flex;
+    align-items: flex-end;
+    margin: 150px 0px 0px 0px;
+    width: 800px;
+    height: 300px;
+  }
+  .container5 {
+    display:flex;
+    align-content: flex-end;
+    justify-content: flex-end;
+    width: 800px;
+    height: 500px;
+   
+  }    
+    
+  .projects { 
+    position: absolute;
+    left: 25px;
+    top: 1000px;
+    justify-content:flex-start;
+    font-size: 30px;
+    color: rgb(128, 171, 155);
+    width: 150px;
+    height:50px;
+  
+  }
+   .about, .contact { 
+    position: relative;
+    bottom: 175px;
+    left: -50px;
+    font-size: 30px;
+    color: rgb(128, 171, 155);
+    height:50px;
+    
+   }
+
+   .line1, .line3 {
+    
+    height: 350px;
+    width: 4px;
+    background-color: rgb(128, 171, 155);
+    margin-left: -50px;
+  }
+
+    
+  .p-about, .p-contact { 
+    position: relative;
+    bottom: 75px;
+    font-size: 15px;
+    color: rgb(128, 171, 155);
+    height: 200px;
+    width: 425px;
+    margin: 0px 0px 0px -45px;
+    padding: 50px 0px 55px 0px;
+   } 
+   .images {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    width: 500px;
+    height: 500px;
+    margin: 40px 5px 0px 0px;
+   
+    }
+
+  .img3 {
+    height: 300px;
+    width: 400px;
+  }
+
+  .soon1, .soon2 {
+     height: 150px;
+     width: 175px;
+   }
+
+   span{
+    color: rgba(187, 146, 225, 0.776);
+    font-weight: bold;
+   }
+   .line2 { 
+    position: absolute;
+    left: 170px;
+    height: 600px;
+    width:4px;
+    background-color: rgb(128, 171, 155);
+  }
+}
