@@ -141,15 +141,14 @@ section {
     background-color: rgb(128, 171, 155);
 }
 
-.images {
+ .images {
     display:flex;
     flex-wrap: wrap;
     width: 900px;
     height:700px;
     justify-content: center;
     margin-right: 250px;
-    
-}
+  }
 .soon1, .soon2 {
     margin: 0px 15px 0px 15px;
 }
@@ -601,6 +600,7 @@ span{
     margin: 0px 0px 0px -45px;
     padding: 50px 0px 55px 0px;
    } 
+
    .images {
     display:flex;
     flex-wrap: wrap;
